@@ -39,9 +39,13 @@
 
 
 
-
+local lastest_version_on_git = loadstring(game:HttpGet(https://raw.githubusercontent.com/SiriusSoftwareLtd/rayfield-gen2/refs/heads/main/version.txt))()
 local version_12_124gg_0_skg = 1.2.6
 print("VERSION LOADED:" ,, version_12_124gg_0_skg)
+
+if lastest_version_on_git > version_12_124gg_0_skg then
+    warn("The LIBRARY UI is outdated")
+end
 
 local a local aa,ab,ac,ad,ae,af,ag,ah,ai,aj,ak,al,am,b,c,d,e,f,g,h,i={function()local b,c,d=a(1)local e return(function(
 ...)local f,g,h,i,j,k=d(c.utility.variables),d(c.utility.image),d(c.utility.locale),d(c.utility.constants),d(c.utility.
