@@ -14,9 +14,11 @@ Your script returns a module called fling_hub, so you can call its functions aft
 1. Load the module
 If you saved the code in a ModuleScript, require it from a script running in the appropriate Roblox context:
 
-lua
 
-local fling_hub = loadstring(game:HttpGet("https://pastebin.com/raw/mZqw4NLd"))()
+
+local fling_hub = loadstring(
+    game:HttpGet("https://raw.githubusercontent.com/mrdasher-col/Tomocrhoma-HUB/refs/heads/main/extencions/fling.lua")
+)()
 
 
 2. Fling a player
